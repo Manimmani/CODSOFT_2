@@ -1,4 +1,4 @@
-# My Unique Portfolio
+# My Portfolio
 
 Welcome to my unique portfolio website! This project showcases my skills, projects, and achievements as a web developer and Python enthusiast. It's a static website built using HTML and CSS, designed to provide a professional overview of my capabilities.
 
