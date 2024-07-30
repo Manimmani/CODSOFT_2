@@ -1,0 +1,207 @@
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background: url('background.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+/* Header and Hero Section */
+header {
+    position: relative;
+    height: 100vh;
+    background: url('background.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Content Sections */
+.content {
+    padding: 4rem 2rem;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.profile-pic {
+    display: block;
+    width: 160px;
+    height: 170px;
+    border-radius: 60%;
+    border: 4px solid #007bff;
+    margin: 1.5rem auto;
+    object-fit: cover;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+
+
+.project-card h3 {
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.project-card p {
+    padding: 0 1rem 1rem;
+    color: #555;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.woff2') format('woff2'),
+         url('fonts/Roboto-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Bold.woff2') format('woff2'),
+         url('fonts/Roboto-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.skills {
+    padding-right:70%  ;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 10%;
+}
+
+.skills h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.skill {
+    margin-bottom: 1rem;
+}
+
+.skill-level {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.skill-name {
+    font-weight: bold;
+    margin-left: 40%;
+}
+
+.skill-bar {
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    height: 1rem;
+    margin-left: 40%;
+}
+
+.skill-bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #007bff;
+}
+
+.skill-bar[data-level="beginner"]::before {
+    width: 40%;
+}
+
+.skill-bar[data-level="intermediate"]::before {
+    width: 70%;
+}
+
+.skill-bar[data-level="advanced"]::before {
+    width: 90%;
+}
+#achievements ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+}
+
+#achievements li {
+    margin-bottom: 0.5rem;
+}
+#resume {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#resume .cta-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+#resume .cta-button:hover {
+    background-color: #0056b3;
+}
